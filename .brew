@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+# Updating and Upgrading
+brew update
+brew upgrade
+
+# Installing productivity steroids
+
+brew install awscli
+brew install ccat
+brew install cmake
+brew install cowsay
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+brew install curl
+brew install dep
+brew install diff-so-fancy
+brew install docker
+brew install docker-machine
+brew install embulk
+brew install gcc
+brew install git
+brew install git-extras
+brew install gnupg2
+brew install go
+brew install gradle
+brew install graphicsmagick
+brew install groovy
+brew install httpie
+brew install ipcalc
+brew install jenv
+brew install jq
+brew install jmeter
+brew install maven
+brew install mas
+brew install maven
+brew install mongodb
+brew install neovim
+brew install opencv
+brew install openssl
+brew install packer
+brew install python
+brew install python3
+brew install pstree
+brew install tmux
+brew install tree
+brew install wget
+brew install wifi-password
+brew install youtube-dl
+brew install zsh
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
+
+# Taps
+brew tap homebrew/services
+brew tap caskroom/cask
+brew tap caskroom/fonts
+brew tap caskroom/versions
+
+# Cleanup
+brew cleanup
