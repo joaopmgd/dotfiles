@@ -5,7 +5,7 @@ So, we gonna have our dotfiles and scripts always versioned in the "HOME" folder
 
 Right now, this is mac only
 
-#### This repository is completly based on the [Leonardo Borges Avelino - dotfiles](https://github.com/lborgav/dotfiles) repository.
+#### This repository is heavily based on the [Leonardo Borges Avelino - dotfiles](https://github.com/lborgav/dotfiles) repository, with some personal changes and installations.
 
 _Reference: [best-way-to-store-dotfiles-git-bare-repo](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)_
 
@@ -41,7 +41,7 @@ _Reference: [best-way-to-store-dotfiles-git-bare-repo](https://developer.atlassi
 ## Installing dotfiles on a new computer
 
 ```sh
-git clone --bare https://github.com/lborgav/dotfiles.git $HOME/.df
+git clone --bare https://github.com/joaopmgd/dotfiles.git $HOME/.df
 
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.df/ --work-tree=$HOME $@
