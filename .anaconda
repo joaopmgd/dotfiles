@@ -1,0 +1,15 @@
+# Go to home directory
+cd ~
+
+# You can change what anaconda version you want at 
+# https://repo.continuum.io/archive/
+curl https://repo.continuum.io/archive/Anaconda3-5.2.0-MacOSX-x86_64.sh -o anaconda3.sh
+
+bash anaconda3.sh -b -p ~/anaconda3
+rm anaconda3.sh
+echo 'export PATH="~/anaconda3/bin:$PATH"' >> ~/.bash_profile 
+
+# Refresh basically
+source .bash_profile
+
+conda update conda

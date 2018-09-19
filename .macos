@@ -76,6 +76,14 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 
+###############################################################################
+# Google Chrome & Google Chrome Canary                                        #
+###############################################################################
+
+# Disable the all too sensitive backswipe on trackpads
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+
+
 ###################################################################
 # Restart affected applications 
 ###################################################################
