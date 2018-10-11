@@ -30,7 +30,6 @@ brew cask install java9
 brew cask install kap
 brew cask install postman 
 brew cask install remote-mouse
-brew cask install robo-3t
 brew cask install skype
 brew cask install slack
 brew cask install soapui
@@ -41,7 +40,6 @@ brew cask install teamsql
 brew cask install teamviewer
 brew cask install the-unarchiver
 brew cask install virtualbox
-brew cask install visual-studio
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install whatsapp
@@ -53,4 +51,4 @@ brew cask install font-pt-sans
 brew cask install font-source-code-pro
 
 # Cleanup
-brew cask cleanup
+brew cleanup
