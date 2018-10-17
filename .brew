@@ -9,6 +9,7 @@ brew upgrade
 brew install awscli
 brew install ccat
 brew install cmake
+brew install cmatrix
 brew install cowsay
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install curl
