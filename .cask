@@ -46,11 +46,10 @@ brew cask install whatsapp
 brew cask install xquartz
 
 # Fonts
+brew tap caskroom/fonts
 brew cask install font-fira-code
 brew cask install font-pt-sans
 brew cask install font-source-code-pro
-brew tap caskroom/fonts
-brew cask install font-fira-code
 
 # Cleanup
 brew cleanup
