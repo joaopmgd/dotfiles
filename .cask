@@ -18,6 +18,7 @@ brew cask install docker
 brew cask install dropbox
 brew cask install firefox
 brew cask install flux
+brew cask install gitup
 brew cask install google-backup-and-sync
 brew cask install google-chrome
 brew cask install haskell-platform
