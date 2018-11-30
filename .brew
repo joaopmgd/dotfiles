@@ -23,6 +23,7 @@ brew install git
 brew install git-extras
 brew install gnupg2
 brew install go
+brew install gobuffalo/tap/buffalo
 brew install gradle
 brew install graphicsmagick
 brew install groovy
