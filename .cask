@@ -13,6 +13,7 @@ brew cask install quicklookapk
 # Apps
 brew cask install adapter
 brew cask install authy
+brew cask install chromedriver
 brew cask install datagrip
 brew cask install docker
 brew cask install dropbox
