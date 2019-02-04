@@ -37,6 +37,8 @@ brew install maven
 brew install mas
 brew install maven
 brew install node
+brew install node@8
+brew install node@6
 brew install mongodb
 brew install neovim
 brew install opencv
