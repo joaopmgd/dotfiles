@@ -25,10 +25,10 @@ brew cask install google-chrome
 brew cask install haskell-platform
 brew cask install imagealpha
 brew cask install imageoptim
-brew cask install intellij-idea
 brew cask install iterm2
 brew cask install java8
 brew cask install java9
+brew cask install jetbrains-toolbox
 brew cask install kap
 brew cask install postman 
 brew cask install remote-mouse
