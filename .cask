@@ -13,7 +13,9 @@ brew cask install quicklookapk
 # Apps
 brew cask install adapter
 brew cask install authy
+brew cask install charles
 brew cask install chromedriver
+brew cask install cyberduck
 brew cask install docker
 brew cask install dropbox
 brew cask install firefox
@@ -43,13 +45,14 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install whatsapp
 brew cask install xquartz
+brew cask install zeplin
 
 # Fonts
 brew tap caskroom/fonts
 brew cask install font-fira-code
 brew cask install font-pt-sans
 brew cask install font-source-code-pro
-brew cask install roboto
+brew cask install font-roboto
 
 # Cleanup
 brew cleanup
