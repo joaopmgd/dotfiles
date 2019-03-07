@@ -29,7 +29,6 @@ brew cask install java8
 brew cask install jetbrains-toolbox
 brew cask install kap
 brew cask install postman 
-brew cask install remote-mouse
 brew cask install skype
 brew cask install slack
 brew cask install soapui
