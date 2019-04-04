@@ -1,0 +1,5 @@
+npm install -g @vue/cli
+npm i -S @vue/ui
+npm install -g eslint
+npm install -g ccurl
+npm install -g couchshell
