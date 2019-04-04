@@ -71,6 +71,17 @@ echo
 echo "> Installing NPM packages"
 sh .npm
 
+# gitignore
+echo
+echo "> Adding git ignore global"
+cp ./configFiles/gitignore_global ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+
+# oh-my-zsh
+echo
+echo "> Adding oh-my-zsh config file"
+cp ./configFiles/.zshrc ~/.zshrc
+
 # Restart computer
 echo
 echo "###########################"
