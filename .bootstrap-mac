@@ -28,8 +28,6 @@ echo "> Setting up git user"
 git config --global user.name $fullname
 git config --global user.email $email
 
-# TODO: Private keys
-
 echo
 echo "> Install Homebrew"
 # Install brew
@@ -62,6 +60,16 @@ sh .macos
 echo
 echo "> Installing Anaconda"
 sh .anaconda
+
+# Pip
+echo
+echo "> Installing Pip packages"
+sh .pip
+
+# npm
+echo
+echo "> Installing NPM packages"
+sh .npm
 
 # Restart computer
 echo
