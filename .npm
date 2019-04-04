@@ -1,5 +1,12 @@
+# Installing Vue for frontend
 npm install -g @vue/cli
 npm i -S @vue/ui
+
+# Installing lint
 npm install -g eslint
+
+# Installing ccurl to curl for couchdb
 npm install -g ccurl
+
+# Installing couchdb / cloudant
 npm install -g couchshell
