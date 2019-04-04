@@ -144,10 +144,6 @@ export PATH="~/anaconda3/bin:$PATH"
 export GOPATH=$HOME/go
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
@@ -156,3 +152,7 @@ unsetopt inc_append_history
 unsetopt share_history
 
 USER=''
+
+# Ruby
+export RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init -)"
