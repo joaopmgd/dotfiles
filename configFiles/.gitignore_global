@@ -60,6 +60,30 @@ desktop.ini
 .iml
 *.sublime-workspace
 
-# Dependency directories
-#############
+# Dependency directories #
+##########################
 node_modules/
+
+
+# Go Depencies #
+################
+vendor
+
+# Python Env #
+##############
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg/
+venv/
