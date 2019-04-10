@@ -33,6 +33,7 @@ brew install ipcalc
 brew install java8
 brew install jenv
 brew install jq
+brew install jhipster
 brew install jmeter
 brew install maven
 brew install mas
