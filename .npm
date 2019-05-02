@@ -10,3 +10,5 @@ npm install -g ccurl
 
 # Installing couchdb / cloudant
 npm install -g couchshell
+
+npm install -g jshint
