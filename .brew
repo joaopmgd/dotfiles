@@ -34,7 +34,7 @@ brew install java8
 brew install jenv
 brew install jq
 brew install jhipster
-brew install jmeter --with-plugins
+brew install jmeter
 brew install maven
 brew install mas
 brew install maven
