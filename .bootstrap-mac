@@ -71,6 +71,11 @@ echo
 echo "> Installing NPM packages"
 sh .npm
 
+# go
+echo
+echo "> Installing GO packages"
+sh .go
+
 # gitignore
 echo
 echo "> Adding git ignore global"
