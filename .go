@@ -13,3 +13,4 @@ go get github.com/alecthomas/template
 go get github.com/lib/pq
 go get github.com/satori/go.uuid
 go get github.com/segmentio/kafka-go
+go get github.com/99designs/gqlgen
