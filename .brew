@@ -8,6 +8,8 @@ brew upgrade
 
 brew install awscli
 brew install ccat
+brew tap cloudfoundry/tap
+brew install cf-cli
 brew install cmake
 brew install cmatrix
 brew install cowsay
