@@ -37,6 +37,7 @@ brew cask install slack
 brew cask install soapui
 brew cask install sourcetree
 brew cask install spotify
+brew cask install sublime-merge
 brew cask install sublime-text
 brew cask install teamsql
 brew cask install teamviewer
