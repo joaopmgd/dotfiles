@@ -25,7 +25,6 @@ brew cask install google-backup-and-sync
 brew cask install google-chrome
 brew cask install imagealpha
 brew cask install imageoptim
-brew cask install insomnia
 brew cask install iterm2
 brew cask install java8
 brew cask install jetbrains-toolbox
