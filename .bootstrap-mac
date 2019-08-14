@@ -57,9 +57,9 @@ echo "> Setting up Mac OS Preferences"
 sh .macos
 
 # Anaconda
-echo
-echo "> Installing Anaconda"
-sh .anaconda
+# echo
+# echo "> Installing Anaconda"
+# sh .anaconda
 
 # Pip
 echo
