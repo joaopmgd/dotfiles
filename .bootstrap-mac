@@ -79,13 +79,13 @@ sh .go
 # gitignore
 echo
 echo "> Adding git ignore global"
-cp ./configFiles/gitignore_global ~/.gitignore_global
+cp configFiles/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
 # oh-my-zsh
 echo
 echo "> Adding oh-my-zsh config file"
-cp ./configFiles/.zshrc ~/.zshrc
+cp configFiles/.zshrc ~/.zshrc
 
 # Restart computer
 echo
