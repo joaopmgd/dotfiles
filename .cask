@@ -39,7 +39,6 @@ brew cask install sourcetree
 brew cask install spotify
 brew cask install sublime-merge
 brew cask install sublime-text
-brew cask install teamsql
 brew cask install teamviewer
 brew cask install the-unarchiver
 brew cask install virtualbox
