@@ -1,0 +1,86 @@
+{
+    //--------------------
+    // Workbench
+    //--------------------
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula",
+    //
+    //--------------------
+    // Files config
+    //--------------------
+    "files.autoSave": "afterDelay",
+    //
+    //--------------------
+    // Golang
+    //--------------------
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    //
+    //--------------------
+    // Terminal config
+    //--------------------
+    "terminal.integrated.fontSize": 14,
+    //
+    //--------------------
+    // Editor config
+    //--------------------
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.renderLineHighlight": "gutter",
+    //
+    //--------------------
+    // Increase the font size of the whole application
+    //--------------------
+    "window.zoomLevel": 1,
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.highlights.enabled": true,
+    //
+    //--------------------
+    // ESLint
+    //--------------------
+    "eslint.codeActionsOnSave.mode": "all",
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "files.associations": {
+        ".sequelizerc": "javascript",
+        ".stylelintrc": "json",
+        ".prettierrc": "json"
+    },
+    //
+    //--------------------
+    // Breadcrumbs config
+    //--------------------
+    "breadcrumbs.enabled": true,
+    //
+    //--------------------
+    // GitLens config
+    //--------------------
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    //
+    //--------------------
+    // Code Runner config
+    //--------------------
+    "code-runner.saveAllFilesBeforeRun": true
+}
