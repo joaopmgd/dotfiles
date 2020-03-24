@@ -49,7 +49,7 @@ brew cask install xquartz
 brew cask install zeplin
 
 # Fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 brew cask install font-pt-sans
 brew cask install font-source-code-pro
