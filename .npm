@@ -1,16 +1,10 @@
-# Installing Vue for frontend
-npm install -g @vue/cli
-npm i -S @vue/ui
+#!/bin/bash
 
-# Installing lint
-npm install -g eslint
-
-# Installing ccurl to curl for couchdb
-npm install -g ccurl
-
-# Installing couchdb / cloudant
-npm install -g couchshell
-
-npm install -g jshint
-
+npm install -g create-react-app
+npm install -g create-react-native-app
+npm install -g nodemon
+npm install -g prettier
+npm install -g eslint 
+npm install -g @vue/cli 
+npm install -g react-native-cli
 npm install -g typescript
