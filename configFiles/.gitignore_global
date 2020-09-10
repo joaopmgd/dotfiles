@@ -3,6 +3,10 @@
 # Place a copy if this at ~/.gitignore_global
 # Run `git config --global core.excludesfile ~/.gitignore_global`
 
+# temp
+crpt-joao-definitions.json
+crpt-fabio-definitions.json
+
 # Compiled source #
 ###################
 *.com
@@ -88,3 +92,10 @@ var/
 .installed.cfg
 *.egg/
 venv/
+
+
+# Terraform #
+#############
+.terraform/
+.tfstate
+.backup
