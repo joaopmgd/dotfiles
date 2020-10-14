@@ -146,5 +146,8 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
-    "python.showStartPage": false
+    "python.showStartPage": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitNotFoundWarning": true
+    }
 }
