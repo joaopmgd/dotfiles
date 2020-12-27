@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/joaopedrodias/.oh-my-zsh"
+export ZSH="/Users/joao/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -129,7 +129,7 @@ export CLICOLOR=1
 export LSCOLORS=CxFxGxDxBxecedabacaged
 export GOPATH=$HOME/go/
 export PATH=$PATH:$(go env GOPATH)/bin
-
+export PATH="$PATH:~/development/flutter/bin"
 
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
