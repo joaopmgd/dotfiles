@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
+# Install Node
+source ~/.zshrc
+nvm install node
+
+# Install some common packages
+npm install -g yarn
 npm install -g create-react-app
 npm install -g create-react-native-app
 npm install -g nodemon

@@ -27,9 +27,9 @@ _Reference: [best-way-to-store-dotfiles-git-bare-repo](https://developer.atlassi
 * `.brew` - Command line tools using Homebrew
 * `.cask` - Applications using Homebrew Cask
 * `.mas` - Mac App Store apps
-* `.anaconda` - Anaconda environment for Python
-* `.pip` - Pip packages for Python
-* `.npm` - Node packages
+* `.go` - Go packages
+* `.pip` - Python set up and Pip packages for Python
+* `.npm` - Node set up and packages
 
 #### Setup
 

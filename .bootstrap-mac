@@ -46,6 +46,11 @@ sh .cask
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# oh-my-zsh
+echo
+echo "> Adding oh-my-zsh config file"
+cp configFiles/.zshrc ~/.zshrc
+
 # Mac App Store app's
 echo
 echo "> Installing Mac App Store app's with mas"
@@ -55,11 +60,6 @@ sh .mas
 echo
 echo "> Setting up Mac OS Preferences"
 sh .macos
-
-# Anaconda
-# echo
-# echo "> Installing Anaconda"
-# sh .anaconda
 
 # Pip
 echo
@@ -82,10 +82,10 @@ echo "> Adding git ignore global"
 cp configFiles/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
-# oh-my-zsh
+# gitconfig
 echo
-echo "> Adding oh-my-zsh config file"
-cp configFiles/.zshrc ~/.zshrc
+echo "> Updating git config"
+cp configFiles/.gitconfig ~/.gitconfig
 
 # Restart computer
 echo
