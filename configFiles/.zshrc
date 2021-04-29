@@ -155,3 +155,11 @@ export NVM_DIR="$HOME/.nvm"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+export GOPRIVATE="github.com/tradersclub"
+export GOSUMDB="off"
+export GONOSUMDB="github.com/tradersclub"
+export GONOPROXY=github.com/tradersclub
+
+export DYLD_FALLBACK_LIBRARY_PATH=~/go/src/intelimarket-client-go/internal/bin/
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
