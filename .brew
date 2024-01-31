@@ -7,49 +7,36 @@ brew upgrade
 # Installing productivity steroids
 brew install awscli
 brew install ccat
-brew tap cloudfoundry/tap
-brew install cf-cli
-brew install clang-format
 brew install cmake
 brew install cmatrix
 brew install cowsay
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install curl
 brew install diff-so-fancy
-brew install docker
-brew install docker-compose
-brew install gcc
-brew install gcc@7
+brew install git
 brew install git-extras
-brew install gnupg2
 brew install go
-brew install graphicsmagick
-brew install httpie
-brew install ipcalc
-brew install jenv
+echo "export GOPATH=\$HOME/go" >> ~/.bash_profile &&
+echo "export PATH=\$PATH:\$GOPATH/bin" >>  ~/.bash_profile
 brew install jq
 brew install mas
-brew install neovim
-brew install opencv
-brew install openssl
-brew install packer
-brew install protobuf
-brew install pyenv
+brew install powerlevel10k
 brew install pstree
-brew install rabbitmq
-brew install redis
 brew install tree
 brew install wget
 brew install wifi-password
-brew install youtube-dl
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
-# Taps
-brew tap homebrew/services
-brew tap homebrew/cask-cask
+# Fonts
 brew tap homebrew/cask-fonts
-brew tap homebrew/cask-versions
+brew install --cask font-fira-code
+brew install --cask font-pt-sans
+brew install --cask font-source-code-pro
+brew install --cask font-roboto
+
+# Terraform
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 
 # Cleanup
 brew cleanup

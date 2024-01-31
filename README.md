@@ -1,37 +1,26 @@
-## About this system
+# About this system
 
-This system is totally based on git.
-So, we gonna have our dotfiles and scripts always versioned in the "HOME" folder.
+This system is totally based on git
 
 Right now, this is mac only
 
-#### This repository is heavily based on the [Leonardo Borges Avelino - dotfiles](https://github.com/lborgav/dotfiles) repository, with some personal changes and installations.
-
-_Reference: [best-way-to-store-dotfiles-git-bare-repo](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)_
-
 ## Repository Structure
 
-#### Shell environment
+### Shell environment
 
-* `.aliases`
-* `.exports`
 * `.zshrc` - My ZSH config
-* `.functions` - Small utilitary shell functions
 
-#### Git
+### Git
 
 * `.gitconfig` - Personal git preferences
 
-#### Command lines and Apps
+### Command lines and Apps
 
 * `.brew` - Command line tools using Homebrew
 * `.cask` - Applications using Homebrew Cask
 * `.mas` - Mac App Store apps
-* `.go` - Go packages
-* `.pip` - Python set up and Pip packages for Python
-* `.npm` - Node set up and packages
 
-#### Setup
+### Setup
 
 * `.bootstrap-mac` - Setup my personal macbook
 * `.macos` - Personal macbook preferences
@@ -39,25 +28,7 @@ _Reference: [best-way-to-store-dotfiles-git-bare-repo](https://developer.atlassi
 ## Installing dotfiles on a new computer
 
 ```sh
-git clone --bare https://github.com/joaopmgd/dotfiles.git $HOME/.df
-
-function dotfiles {
-   /usr/bin/git --git-dir=$HOME/.df/ --work-tree=$HOME $@
-}
-
-mkdir -p .dotfiles-backup
-
-dotfiles checkout
-
-if [ $? = 0 ]; then
-  echo "Checked out config.";
-  else
-    echo "Backing up pre-existing dot files.";
-    dotfiles checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfiles-backup/{}
-fi;
-
-dotfiles checkout
-dotfiles config status.showUntrackedFiles no
+git clone https://github.com/joaopmgd/dotfiles.git
 ```
 
-Now, run **sh .bootstrap-mac**
+Run **sh .bootstrap-mac**

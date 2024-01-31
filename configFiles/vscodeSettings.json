@@ -6,7 +6,7 @@
     "workbench.colorTheme": "Dracula",
     "workbench.sideBar.location": "left",
     "workbench.editor.tabSizing": "shrink",
-    "workbench.editor.showTabs": true,
+    "workbench.editor.showTabs": "multiple",
     //
     //--------------------
     // Files config
@@ -23,6 +23,7 @@
     // Terminal config
     //--------------------
     "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     //
     //--------------------
     // Editor config
@@ -60,7 +61,7 @@
     // ESLint
     //--------------------
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": "explicit"
     },
     "eslint.codeActionsOnSave.mode": "all",
     "[javascript]": {
@@ -88,13 +89,10 @@
         ".stylelintrc": "json",
         ".prettierrc": "json"
     },
-    "eslint.enable": true,
     "javascript.validate.enable": true,
     "typescript.format.enable": true,
     "typescript.validate.enable": true,
     "typescript.tsdk": "node_modules/typescript/lib",
-    "javascript.implicitProjectConfig.checkJs": true,
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
     //
@@ -104,36 +102,14 @@
     "breadcrumbs.enabled": true,
     //
     //--------------------
-    // GitLens config
-    //--------------------
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    //
-    //--------------------
     // Code Runner config
     //--------------------
     "code-runner.saveAllFilesBeforeRun": true,
     "extensions.ignoreRecommendations": false,
     //
     //--------------------
-    // Terraform config
+    // Dart config
     //--------------------
-    "terraform.indexing": {
-        "enabled": false,
-        "liveIndexing": false,
-        "delay": 500,
-        "exclude": [
-            ".terraform/**/*",
-            "**/.terraform/**/*"
-        ]
-    },
-    "terraform.languageServer": {
-        "external": true,
-        "args": [
-            "serve"
-        ]
-    },
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
@@ -144,10 +120,24 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
-    "python.showStartPage": false,
-    "gitlens.advanced.messages": {
-        "suppressCommitNotFoundWarning": true
-    }
+    "[javascript][javascriptreact][typescript][typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+    "cSpell.userWords": [
+        "autofetch",
+        "Fira",
+        "goimports",
+        "Meslo",
+        "sequelizerc",
+        "struct",
+        "stylelintrc"
+    ],
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "workbench.startupEditor": "none",
+    "editor.stickyScroll.enabled": true
 }

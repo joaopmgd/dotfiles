@@ -4,34 +4,17 @@ echo "###########################"
 echo "Setting up this Macbook ..."
 echo "###########################"
 
-echo
-echo "> Tell me your full name:"
-read fullname
-
-echo
-echo "> Tell me your email:"
-read email
-
-echo
-echo "> Checking if exists software updates"
-sudo softwareupdate -i -a
-
-echo
+# Install command-line-tools
 echo "> Installing command-line-tools"
 xcode-select --install
 
-sudo scutil --set ComputerName "$fullname's Macbook"
-sudo scutil --set HostName "$fullname's Macbook"
-
-echo
-echo "> Setting up git user"
-git config --global user.name $fullname
-git config --global user.email $email
-
+# Install Homebrew
 echo
 echo "> Install Homebrew"
 # Install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/joao/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Brewing
 echo
@@ -44,7 +27,8 @@ echo "> Installing casks"
 sh .cask
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 
 # oh-my-zsh
 echo
@@ -61,21 +45,6 @@ echo
 echo "> Setting up Mac OS Preferences"
 sh .macos
 
-# Pip
-echo
-echo "> Installing Pip packages"
-sh .pip
-
-# npm
-echo
-echo "> Installing NPM packages"
-sh .npm
-
-# go
-echo
-echo "> Installing GO packages"
-sh .go
-
 # gitignore
 echo
 echo "> Adding git ignore global"
@@ -87,9 +56,14 @@ echo
 echo "> Updating git config"
 cp configFiles/.gitconfig ~/.gitconfig
 
-# Restart computer
+# Finish setup
+exec ~/.zshrc
 echo
 echo "###########################"
 echo " Finished your Setup!!"
-echo " Restart your computer now!"
+echo " Execute the following commands manually:"
+echo " p10k configure"
+echo " aws configure"
 echo "###########################"
+echo " Update the iterm colors theme"
+echo " Setup the github ssh connection"
