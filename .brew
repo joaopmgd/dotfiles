@@ -26,6 +26,8 @@ brew install wget
 brew install wifi-password
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install zoxide
+brew install fzf
 
 # Fonts
 brew tap homebrew/cask-fonts
