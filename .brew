@@ -28,6 +28,8 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zoxide
 brew install fzf
+brew install speedtest-cli
+brew install htop
 
 # Fonts
 brew tap homebrew/cask-fonts
