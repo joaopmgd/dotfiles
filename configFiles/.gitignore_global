@@ -72,7 +72,6 @@ vendor
 
 # Python Env #
 ##############
-.Python
 env/
 build/
 develop-eggs/

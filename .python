@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Install
+brew install pyenv
+pyenv install 3.11.8
+pyenv global 3.11.8
+
+# Verify
+pyenv version
+
+# Add path
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+
+# Source:
+# https://opensource.com/article/19/5/python-3-default-mac
