@@ -30,6 +30,7 @@ brew install zoxide
 brew install fzf
 brew install speedtest-cli
 brew install htop
+brew install gh
 
 # Fonts
 brew tap homebrew/cask-fonts
